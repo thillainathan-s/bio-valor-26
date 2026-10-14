@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CIRCUIT-BAGASSE+ | Smart Integrated Biorefinery | BIOVALOR 2026</title>
+    <meta name="description" content="CIRCUIT-BAGASSE+: Smart Integrated Biorefinery for Waste-to-Value Conversion. One Biomass. Multiple Value Streams. Measurable Circularity." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <!-- COLLAPSIBLE LEFT SIDEBAR NAVIGATION -->
+      <aside id="app-sidebar" class="app-sidebar expanded"></aside>
+
+      <!-- MOBILE BACKDROP OVERLAY FOR SIDEBAR DRAWER -->
+      <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+      <!-- MAIN AREA (Adjusts dynamically when sidebar collapses/expands) -->
+      <div id="main-area" class="main-area">
+        <!-- TOP APP HEADER BAR (Mobile hamburger, route title/breadcrumbs, quick stats) -->
+        <header id="top-app-bar" class="top-app-bar"></header>
+
+        <!-- 2D CONTENT CONTAINER (Scrollable dashboard pages) -->
+        <main id="view-content" class="view-content-wrapper"></main>
+
+        <!-- 3D MODELING VIEW CONTAINER (Preserves existing Three.js canvas & HUD) -->
+        <div id="view-3d" class="view-3d-wrapper" style="display: none;">
+          <canvas id="canvas3d"></canvas>
+          <div id="hud-overlay"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
